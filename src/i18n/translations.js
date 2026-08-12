@@ -5,7 +5,6 @@ export const translations = {
       career: 'Carrera',
       blog: 'Blog',
       contact: 'Contacte',
-      downloadCv: 'Descarrega CV',
     },
     hero: {
       eyebrow: "Full 01 — Presentació · Lleida, Catalunya",
@@ -39,7 +38,6 @@ export const translations = {
       meta: 'CV COMPLET →',
       education: 'Educació',
       work: 'Feina',
-      downloadCv: 'Descarrega el CV en PDF',
     },
     blog: {
       label: 'Blog tècnic',
@@ -60,7 +58,6 @@ export const translations = {
       career: 'Carrera',
       blog: 'Blog',
       contact: 'Contacto',
-      downloadCv: 'Descargar CV',
     },
     hero: {
       eyebrow: 'Hoja 01 — Presentación · Lleida, Cataluña',
@@ -94,7 +91,6 @@ export const translations = {
       meta: 'CV COMPLETO →',
       education: 'Educación',
       work: 'Trabajo',
-      downloadCv: 'Descargar el CV en PDF',
     },
     blog: {
       label: 'Blog técnico',
@@ -115,7 +111,6 @@ export const translations = {
       career: 'Career',
       blog: 'Blog',
       contact: 'Contact',
-      downloadCv: 'Download CV',
     },
     hero: {
       eyebrow: 'Sheet 01 — Introduction · Lleida, Catalonia',
@@ -149,7 +144,6 @@ export const translations = {
       meta: 'FULL CV →',
       education: 'Education',
       work: 'Work',
-      downloadCv: 'Download CV as PDF',
     },
     blog: {
       label: 'Technical blog',

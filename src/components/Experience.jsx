@@ -45,13 +45,6 @@ export default function Experience() {
           <TimelineColumn heading={t.career.education} icon={GraduationCap} items={education} />
           <TimelineColumn heading={t.career.work} icon={Briefcase} items={work} />
         </div>
-
-        <a
-          href={`${import.meta.env.BASE_URL}cv-abril-tufet-coll.pdf`}
-          className="inline-flex items-center gap-2 mt-12 font-mono text-xs uppercase tracking-wider border border-white/25 px-5 py-3 hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-        >
-          {t.career.downloadCv}
-        </a>
       </div>
     </section>
   )

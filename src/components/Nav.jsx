@@ -36,12 +36,6 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a
-            href={`${import.meta.env.BASE_URL}cv-abril-tufet-coll.pdf`}
-            className="border border-white/25 px-3 py-1.5 hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors uppercase"
-          >
-            {t.nav.downloadCv}
-          </a>
           <div className="flex items-center gap-1 border border-white/15 px-1 py-1">
             {LANGS.map((l) => (
               <button
