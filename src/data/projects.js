@@ -3,27 +3,30 @@ const base = [
   {
     id: 'thesis',
     tags: ['LLM Fine-Tuning', 'QLoRA / PEFT', 'Claude API', 'Model Evaluation'],
+    status: 'academic',
+  },
+  {
+    id: 'face-recognition',
+    tags: ['FastAPI', 'Docker', 'scikit-learn', 'Gradio', 'CI/CD'],
+    status: 'private',
+    demoUrl: 'https://face-recognition-mlops.onrender.com',
+  },
+  {
+    id: 'ifc-agent',
+    tags: ['LangGraph', 'Claude API', 'RAG', 'FAISS', 'ifcopenshell'],
+    status: 'private',
+  },
+  {
+    id: 'iot-dashboard',
+    tags: ['Python', 'MQTT', 'PostgreSQL', 'Flask', 'IoT'],
     status: 'public',
+    repoUrl: 'https://github.com/apriluu/dashboard',
   },
   {
-    id: 'email-agent',
-    tags: ['Python', 'LLM', 'Outlook API', 'Automation'],
-    status: 'private',
-  },
-  {
-    id: 'mcp-autocad',
-    tags: ['MCP', 'AutoCAD', 'C#', '.NET'],
-    status: 'private',
-  },
-  {
-    id: 'revit-plugin',
-    tags: ['Revit API', 'C#', '.NET 8', 'BIM'],
-    status: 'private',
-  },
-  {
-    id: 'second-brain',
-    tags: ['Obsidian', 'RAG', 'Generative AI'],
-    status: 'private',
+    id: 'pdf-tools',
+    tags: ['JavaScript', 'Node.js', 'Vite', 'REST API'],
+    status: 'public',
+    repoUrl: 'https://github.com/apriluu/Eines-PDF',
   },
 ]
 
@@ -35,29 +38,29 @@ const content = {
         "TFG (nota 10/10). Sistema en dues fases per automatitzar la redacció de memòries tècniques reglamentàries per a una enginyeria. Fase I: pipeline agèntic (5 mòduls encadenats) que edita l'XML intern de plantilles Word, reduint el temps de redacció de 3-5h a ~45-60 min de revisió. Fase II: fine-tuning de Mistral-7B amb QLoRA sobre 13 exemples, comparat amb Claude zero-shot mitjançant ROUGE-L i BERTScore.",
       statusLabel: 'TFG · Nota 10/10',
     },
-    'email-agent': {
-      title: 'Agent de gestió de correu',
+    'face-recognition': {
+      title: 'Face Recognition MLOps',
       summary:
-        "Sistema automatitzat que classifica el correu entrant per projecte, detecta urgències i prepara esborranys de resposta en l'estil de cada destinatari.",
-      statusLabel: 'Privat · Ús intern E3G',
+        'Pipeline de reconeixement facial (MTCNN → FaceNet → SVM) empaquetat com a API REST de producció: FastAPI, Docker, demo interactiva amb Gradio, tests i CI/CD amb GitHub Actions. Desplegat en viu.',
+      statusLabel: 'Repo privat · Demo en viu',
     },
-    'mcp-autocad': {
-      title: 'Integració MCP per a AutoCAD',
+    'ifc-agent': {
+      title: 'IFC Analysis Agent',
       summary:
-        "Connector que permet a un agent d'IA llegir i operar sobre fitxers d'AutoCAD, desplegat a diverses estacions de treball de l'empresa.",
-      statusLabel: 'Privat · Demo disponible',
+        "Agent LangGraph amb RAG local (FAISS) que respon preguntes en llenguatge natural sobre models IFC/BIM residencials — Claude decideix quines de les 10 eines cridar segons la pregunta, en lloc d'executar sempre un pipeline fix.",
+      statusLabel: 'Repo privat',
     },
-    'revit-plugin': {
-      title: 'E3G BIM Tools — Plugin de Revit',
+    'iot-dashboard': {
+      title: 'Sistema IoT de monitorització d\'inundacions',
       summary:
-        "Eina d'IA integrada a Revit per assistir tasques BIM: generació d'elements, consulta de dades de model i suport a la documentació de projectes.",
-      statusLabel: 'Privat · Demo disponible',
+        'Sensors ESP32 → MQTT → servidor Python → PostgreSQL → dashboard en temps real (Flask/SocketIO) → bot de Telegram d\'alertes.',
+      statusLabel: 'Repositori públic',
     },
-    'second-brain': {
-      title: "Segon cervell d'enginyeria (Obsidian + IA)",
+    'pdf-tools': {
+      title: 'Eines de PDF',
       summary:
-        "Sistema que transforma l'històric de projectes d'E3G en una base de coneixement consultable, capaç de redactar noves memòries a partir de precedents.",
-      statusLabel: 'Privat · En desenvolupament',
+        "Aplicació web amb servidor i API pròpia per unir, dividir, girar, comprimir i signar PDFs — tot el processament es fa en local, sense pujar cap fitxer a internet.",
+      statusLabel: 'Repositori públic',
     },
   },
   es: {
@@ -67,29 +70,29 @@ const content = {
         'TFG (nota 10/10). Sistema en dos fases para automatizar la redacción de memorias técnicas reglamentarias para una ingeniería. Fase I: pipeline agéntico (5 módulos encadenados) que edita el XML interno de plantillas Word, reduciendo el tiempo de redacción de 3-5h a ~45-60 min de revisión. Fase II: fine-tuning de Mistral-7B con QLoRA sobre 13 ejemplos, comparado con Claude zero-shot mediante ROUGE-L y BERTScore.',
       statusLabel: 'TFG · Nota 10/10',
     },
-    'email-agent': {
-      title: 'Agente de gestión de correo',
+    'face-recognition': {
+      title: 'Face Recognition MLOps',
       summary:
-        'Sistema automatizado que clasifica el correo entrante por proyecto, detecta urgencias y prepara borradores de respuesta en el estilo de cada destinatario.',
-      statusLabel: 'Privado · Uso interno E3G',
+        'Pipeline de reconocimiento facial (MTCNN → FaceNet → SVM) empaquetado como API REST de producción: FastAPI, Docker, demo interactiva con Gradio, tests y CI/CD con GitHub Actions. Desplegado en vivo.',
+      statusLabel: 'Repo privado · Demo en vivo',
     },
-    'mcp-autocad': {
-      title: 'Integración MCP para AutoCAD',
+    'ifc-agent': {
+      title: 'IFC Analysis Agent',
       summary:
-        'Conector que permite a un agente de IA leer y operar sobre archivos de AutoCAD, desplegado en varias estaciones de trabajo de la empresa.',
-      statusLabel: 'Privado · Demo disponible',
+        'Agente LangGraph con RAG local (FAISS) que responde preguntas en lenguaje natural sobre modelos IFC/BIM residenciales — Claude decide cuáles de las 10 herramientas llamar según la pregunta, en lugar de ejecutar siempre un pipeline fijo.',
+      statusLabel: 'Repo privado',
     },
-    'revit-plugin': {
-      title: 'E3G BIM Tools — Plugin de Revit',
+    'iot-dashboard': {
+      title: 'Sistema IoT de monitorización de inundaciones',
       summary:
-        'Herramienta de IA integrada en Revit para asistir tareas BIM: generación de elementos, consulta de datos del modelo y soporte a la documentación de proyectos.',
-      statusLabel: 'Privado · Demo disponible',
+        'Sensores ESP32 → MQTT → servidor Python → PostgreSQL → dashboard en tiempo real (Flask/SocketIO) → bot de Telegram de alertas.',
+      statusLabel: 'Repositorio público',
     },
-    'second-brain': {
-      title: 'Segundo cerebro de ingeniería (Obsidian + IA)',
+    'pdf-tools': {
+      title: 'Herramientas de PDF',
       summary:
-        'Sistema que transforma el histórico de proyectos de E3G en una base de conocimiento consultable, capaz de redactar nuevas memorias a partir de precedentes.',
-      statusLabel: 'Privado · En desarrollo',
+        'Aplicación web con servidor y API propia para unir, dividir, girar, comprimir y firmar PDFs — todo el procesamiento se hace en local, sin subir ningún archivo a internet.',
+      statusLabel: 'Repositorio público',
     },
   },
   en: {
@@ -99,29 +102,29 @@ const content = {
         "Bachelor thesis (grade 10/10). A two-phase system automating regulatory technical-report generation for an engineering firm. Phase I: an agentic pipeline (5 chained modules) that edits Word templates' internal XML directly, cutting drafting time from 3-5 hours to ~45-60 minutes. Phase II: fine-tuned Mistral-7B with QLoRA on 13 domain-specific examples, benchmarked against zero-shot Claude using ROUGE-L and BERTScore.",
       statusLabel: 'Bachelor thesis · Grade 10/10',
     },
-    'email-agent': {
-      title: 'Email triage agent',
+    'face-recognition': {
+      title: 'Face Recognition MLOps',
       summary:
-        "Automated system that classifies incoming email by project, flags urgent items, and drafts replies in each recipient's own style.",
-      statusLabel: 'Private · Internal use at E3G',
+        'A face-recognition pipeline (MTCNN → FaceNet → SVM) packaged as a production REST API: FastAPI, Docker, an interactive Gradio demo, tests, and CI/CD with GitHub Actions. Deployed live.',
+      statusLabel: 'Private repo · Live demo',
     },
-    'mcp-autocad': {
-      title: 'MCP integration for AutoCAD',
+    'ifc-agent': {
+      title: 'IFC Analysis Agent',
       summary:
-        'A connector that lets an AI agent read and operate on AutoCAD files, deployed across several workstations at the company.',
-      statusLabel: 'Private · Demo available',
+        'A LangGraph agent with local RAG (FAISS) that answers natural-language questions about residential IFC/BIM models — Claude decides which of 10 tools to call based on the question, instead of always running a fixed pipeline.',
+      statusLabel: 'Private repo',
     },
-    'revit-plugin': {
-      title: 'E3G BIM Tools — Revit plugin',
+    'iot-dashboard': {
+      title: 'IoT Flood Monitoring System',
       summary:
-        'An AI tool integrated into Revit to assist BIM tasks: generating elements, querying model data, and supporting project documentation.',
-      statusLabel: 'Private · Demo available',
+        'ESP32 sensors → MQTT → Python server → PostgreSQL → real-time dashboard (Flask/SocketIO) → Telegram alert bot.',
+      statusLabel: 'Public repo',
     },
-    'second-brain': {
-      title: 'Engineering "second brain" (Obsidian + AI)',
+    'pdf-tools': {
+      title: 'PDF Tools',
       summary:
-        "A system that turns E3G's past project history into a searchable knowledge base, capable of drafting new technical reports from precedent.",
-      statusLabel: 'Private · In development',
+        'A web app with its own server and API to merge, split, rotate, compress and sign PDFs — all processing happens locally, no file is ever uploaded.',
+      statusLabel: 'Public repo',
     },
   },
 }

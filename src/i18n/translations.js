@@ -32,6 +32,8 @@ export const translations = {
       metaSuffix: 'REGISTRATS',
       filterAll: 'Tots',
       ref: 'REF.',
+      viewRepo: 'Repositori →',
+      viewDemo: 'Demo en viu →',
     },
     career: {
       label: 'Carrera',
@@ -85,6 +87,8 @@ export const translations = {
       metaSuffix: 'REGISTRADOS',
       filterAll: 'Todos',
       ref: 'REF.',
+      viewRepo: 'Repositorio →',
+      viewDemo: 'Demo en vivo →',
     },
     career: {
       label: 'Carrera',
@@ -138,6 +142,8 @@ export const translations = {
       metaSuffix: 'LOGGED',
       filterAll: 'All',
       ref: 'REF.',
+      viewRepo: 'Repository →',
+      viewDemo: 'Live demo →',
     },
     career: {
       label: 'Career',
