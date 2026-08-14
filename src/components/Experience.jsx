@@ -39,7 +39,7 @@ export default function Experience() {
   return (
     <section id="experiencia" className="px-6 py-24 bg-[var(--blueprint-deep)] blueprint-grid">
       <div className="max-w-5xl mx-auto">
-        <TitleBlock index="04" label={t.career.label} meta={t.career.meta} />
+        <TitleBlock index="04" label={t.career.label} />
 
         <div className="grid md:grid-cols-2 gap-12">
           <TimelineColumn heading={t.career.education} icon={GraduationCap} items={education} />

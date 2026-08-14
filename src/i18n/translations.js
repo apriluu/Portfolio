@@ -37,7 +37,6 @@ export const translations = {
     },
     career: {
       label: 'Carrera',
-      meta: 'CV COMPLET →',
       education: 'Educació',
       work: 'Feina',
     },
@@ -92,7 +91,6 @@ export const translations = {
     },
     career: {
       label: 'Carrera',
-      meta: 'CV COMPLETO →',
       education: 'Educación',
       work: 'Trabajo',
     },
@@ -147,7 +145,6 @@ export const translations = {
     },
     career: {
       label: 'Career',
-      meta: 'FULL CV →',
       education: 'Education',
       work: 'Work',
     },

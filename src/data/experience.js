@@ -79,6 +79,13 @@ const work = {
 const education = {
   ca: [
     {
+      period: '2026 — actual',
+      role: "Màster Habilitant en Enginyeria Informàtica",
+      org: 'Universitat de Lleida (UdL)',
+      location: 'Lleida',
+      description: '',
+    },
+    {
       period: '2022 — juny 2026',
       role: "Grau en Enginyeria Informàtica, menció IA",
       org: 'Universitat de Lleida (UdL)',
@@ -96,6 +103,13 @@ const education = {
   ],
   es: [
     {
+      period: '2026 — actual',
+      role: 'Máster Habilitante en Ingeniería Informática',
+      org: 'Universitat de Lleida (UdL)',
+      location: 'Lleida',
+      description: '',
+    },
+    {
       period: '2022 — junio 2026',
       role: 'Grado en Ingeniería Informática, mención IA',
       org: 'Universitat de Lleida (UdL)',
@@ -112,6 +126,13 @@ const education = {
     },
   ],
   en: [
+    {
+      period: '2026 — present',
+      role: "Master's in Computer Engineering (professional qualification)",
+      org: 'Universitat de Lleida (UdL)',
+      location: 'Lleida, Spain',
+      description: '',
+    },
     {
       period: '2022 — June 2026',
       role: 'Computer Engineering (BSc), AI track',
