@@ -1,17 +1,10 @@
-import { useState } from 'react'
 import TitleBlock from './TitleBlock'
-import { getProjects, getAllTags } from '../data/projects'
+import { getProjects } from '../data/projects'
 import { useLanguage } from '../i18n/LanguageContext'
 
 export default function Projects() {
   const { lang, t } = useLanguage()
-  const [filter, setFilter] = useState(t.projects.filterAll)
-
   const projects = getProjects(lang)
-  const allTags = getAllTags(lang)
-
-  const visible =
-    filter === t.projects.filterAll ? projects : projects.filter((p) => p.tags.includes(filter))
 
   return (
     <section id="projectes" className="px-6 py-24 bg-[var(--blueprint)] blueprint-grid-fine">
@@ -22,24 +15,8 @@ export default function Projects() {
           meta={`${projects.length} ${t.projects.metaSuffix}`}
         />
 
-        <div className="flex flex-wrap gap-2 mb-10 font-mono text-xs uppercase tracking-wide">
-          {[t.projects.filterAll, ...allTags].map((tag) => (
-            <button
-              key={tag}
-              onClick={() => setFilter(tag)}
-              className={`px-3 py-1.5 border transition-colors ${
-                filter === tag
-                  ? 'border-[var(--accent)] text-[var(--accent)]'
-                  : 'border-white/20 text-white/60 hover:border-white/50 hover:text-white'
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid sm:grid-cols-2 gap-6">
-          {visible.map((p) => (
+        <div className="grid sm:grid-cols-2 gap-6 mt-10">
+          {projects.map((p) => (
             <article
               key={p.id}
               className="bg-[var(--blueprint-deep)]/60 border border-white/10 p-6 flex flex-col hover:border-white/25 transition-colors"
