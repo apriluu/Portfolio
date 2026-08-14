@@ -39,38 +39,29 @@ export default function Projects() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
-          {visible.map((p, i) => (
+          {visible.map((p) => (
             <article
               key={p.id}
-              className="corner-marks bg-[var(--blueprint-deep)]/60 border border-white/10 p-6 flex flex-col"
+              className="bg-[var(--blueprint-deep)]/60 border border-white/10 p-6 flex flex-col hover:border-white/25 transition-colors"
             >
-              <div className="flex items-center justify-between mb-3 font-mono text-[10px] uppercase tracking-widest text-white/50">
-                <span>
-                  {t.projects.ref} {String(i + 1).padStart(2, '0')}
-                </span>
+              <div className="flex items-start justify-between gap-3 mb-3">
+                <h3 className="font-display text-xl font-semibold">{p.title}</h3>
                 <span
-                  className={
+                  className={`shrink-0 mt-1 font-mono text-[10px] uppercase tracking-widest whitespace-nowrap ${
                     p.status === 'private'
                       ? 'text-[var(--amber)]'
                       : p.status === 'academic'
                         ? 'text-[var(--accent)]'
                         : 'text-[var(--live)]'
-                  }
+                  }`}
                 >
                   {p.statusLabel}
                 </span>
               </div>
-              <h3 className="font-display text-xl font-semibold mb-2">{p.title}</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-5 flex-1">{p.summary}</p>
-              <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-wide mb-4">
-                {p.tags.map((tag) => (
-                  <span key={tag} className="border border-white/15 px-2 py-1 text-white/60">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <p className="text-white/70 text-sm leading-relaxed mb-4 flex-1">{p.summary}</p>
+              <p className="text-white/40 text-xs mb-3">{p.tags.join(' · ')}</p>
               {(p.repoUrl || p.demoUrl) && (
-                <div className="flex flex-wrap gap-4 font-mono text-xs uppercase tracking-wide pt-3 border-t border-white/10">
+                <div className="flex flex-wrap gap-4 text-xs">
                   {p.repoUrl && (
                     <a
                       href={p.repoUrl}

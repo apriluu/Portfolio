@@ -79,7 +79,7 @@ const work = {
 const education = {
   ca: [
     {
-      period: '2026 — actual',
+      period: 'Setembre 2026 — actual',
       role: "Màster Habilitant en Enginyeria Informàtica",
       org: 'Universitat de Lleida (UdL)',
       location: 'Lleida',
@@ -103,7 +103,7 @@ const education = {
   ],
   es: [
     {
-      period: '2026 — actual',
+      period: 'Septiembre 2026 — actual',
       role: 'Máster Habilitante en Ingeniería Informática',
       org: 'Universitat de Lleida (UdL)',
       location: 'Lleida',
@@ -127,7 +127,7 @@ const education = {
   ],
   en: [
     {
-      period: '2026 — present',
+      period: 'September 2026 — present',
       role: "Master's in Computer Engineering (professional qualification)",
       org: 'Universitat de Lleida (UdL)',
       location: 'Lleida, Spain',
